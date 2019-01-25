@@ -12,6 +12,11 @@
 		B8208E7D21F579800011D48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8208E7B21F579800011D48B /* Main.storyboard */; };
 		B8208E7F21F579820011D48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8208E7E21F579820011D48B /* Assets.xcassets */; };
 		B8208E8221F579820011D48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8208E8021F579820011D48B /* LaunchScreen.storyboard */; };
+		B8CEBB9921FABEF90049FB2F /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CEBB9821FABEF90049FB2F /* GooglePlaces.framework */; };
+		B8CEBB9B21FABF160049FB2F /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CEBB9A21FABF160049FB2F /* GoogleMapsBase.framework */; };
+		B8CEBB9F21FABFAA0049FB2F /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8CEBB9E21FABFAA0049FB2F /* GooglePlaces.bundle */; };
+		B8CEBBC921FAC3560049FB2F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CEBBA821FAC1010049FB2F /* libz.tbd */; };
+		B8CEBBCA21FAC3620049FB2F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CEBBAC21FAC1150049FB2F /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,12 @@
 		B8208E7E21F579820011D48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8208E8121F579820011D48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8208E8321F579820011D48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8CEBB9821FABEF90049FB2F /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		B8CEBB9A21FABF160049FB2F /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		B8CEBB9C21FABF430049FB2F /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlacePicker.framework; sourceTree = "<group>"; };
+		B8CEBB9E21FABFAA0049FB2F /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlaces.bundle; sourceTree = "<group>"; };
+		B8CEBBA821FAC1010049FB2F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B8CEBBAC21FAC1150049FB2F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CEBBCA21FAC3620049FB2F /* libc++.tbd in Frameworks */,
+				B8CEBBC921FAC3560049FB2F /* libz.tbd in Frameworks */,
+				B8CEBB9921FABEF90049FB2F /* GooglePlaces.framework in Frameworks */,
+				B8CEBB9B21FABF160049FB2F /* GoogleMapsBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +53,7 @@
 		B8208E6B21F579800011D48B = {
 			isa = PBXGroup;
 			children = (
+				B8CEBB9721FABEDC0049FB2F /* Frameworks */,
 				B8208E7621F579800011D48B /* CustomPlacePicker */,
 				B8208E7521F579800011D48B /* Products */,
 			);
@@ -62,6 +78,19 @@
 				B8208E8321F579820011D48B /* Info.plist */,
 			);
 			path = CustomPlacePicker;
+			sourceTree = "<group>";
+		};
+		B8CEBB9721FABEDC0049FB2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8CEBBAC21FAC1150049FB2F /* libc++.tbd */,
+				B8CEBBA821FAC1010049FB2F /* libz.tbd */,
+				B8CEBB9E21FABFAA0049FB2F /* GooglePlaces.bundle */,
+				B8CEBB9C21FABF430049FB2F /* GooglePlacePicker.framework */,
+				B8CEBB9A21FABF160049FB2F /* GoogleMapsBase.framework */,
+				B8CEBB9821FABEF90049FB2F /* GooglePlaces.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CEBB9F21FABFAA0049FB2F /* GooglePlaces.bundle in Resources */,
 				B8208E8221F579820011D48B /* LaunchScreen.storyboard in Resources */,
 				B8208E7F21F579820011D48B /* Assets.xcassets in Resources */,
 				B8208E7D21F579800011D48B /* Main.storyboard in Resources */,
@@ -283,11 +313,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = CustomPlacePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = lamh.ptle.CustomPlacePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -300,11 +335,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = CustomPlacePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = lamh.ptle.CustomPlacePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
